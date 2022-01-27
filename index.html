@@ -11,30 +11,30 @@
 <div class="calcContainer">
     <div class="calculator">
     <div class="displayContainer">
-        <div class="display">2345</div>
+        <div class="display"></div>
     </div>
     <div class="opContainer">
      <div class="operatorButtons">
-         <div class="addBtn">+</div>
-         <div class="subBtn">-</div>
-         <div class="multBtn">x</div>
-         <div class="divBtn">/</div>
-         <div class="powBtn">^</div>
+         <div class="addBtn" onclick="displayClick(' + ')">+</div>
+         <div class="subBtn" onclick="displayClick(' - ')">-</div>
+         <div class="multBtn" onclick="displayClick(' x ')">x</div>
+         <div class="divBtn" onclick="displayClick(' / ')">/</div>
+         <div class="powBtn" onclick="displayClick(' ^ ')">^</div>
     </div>
 </div>
 <div class="keypadContainer">
     <div class="numContainer">
-    <div class="nine">9</div>
-    <div class="eight">8</div>
-    <div class="seven">7</div>    
-    <div class="six">6</div>
-    <div class="five">5</div>
-    <div class="four">4</div>
-    <div class="three">3</div>
-    <div class="two">2</div>
-    <div class="one">1</div>
+    <div class="nine" onclick="displayClick(9)">9</div>
+    <div class="eight" onclick="displayClick(8)">8</div>
+    <div class="seven" onclick="displayClick(7)">7</div>    
+    <div class="six" onclick="displayClick(6)">6</div>
+    <div class="five" onclick="displayClick(5)">5</div>
+    <div class="four" onclick="displayClick(4)">4</div>
+    <div class="three" onclick="displayClick(3)">3</div>
+    <div class="two" onclick="displayClick(2)">2</div>
+    <div class="one" onclick="displayClick(1)">1</div>
     <div class="extraButtons">
-        <div class="clear">Clear</div>
+        <div class="clear" onclick="clearContent('.display')">Clear</div>
         <div class="equal">=</div>
         </div>
 </div>

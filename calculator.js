@@ -45,3 +45,30 @@ const add = function(a,b) {
     const divide = function(a,b){
       return a % b;
 }
+//let numKey = document.querySelector("")
+//numKey.addEventListener("click", function(e){
+
+
+function displayClick(Text){
+ /* const display = document.querySelector(".display");
+
+  const content = document.createElement('div');
+  content.classList.add('content');
+  content.textContent = String;
+  display.appendChild(content);
+*/
+  //const display = document.getElementById('.display');
+  //display.innerHTML += (a);
+
+  const display = document.querySelector('.display');
+  let node = document.createTextNode (Text)
+  display.appendChild(node);
+}
+
+  function clearContent(elementID) {
+    document.querySelector(elementID).innerHTML = "";
+}
+
+function solve(){
+
+}
