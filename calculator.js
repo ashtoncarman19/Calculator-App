@@ -23,6 +23,10 @@ const add = function(a,b) {
       }
       return sum;
     }
+
+    const multiplyTwoNumbers = function(a,b){
+      return a * b;
+    }
     
     
     const power = function(a,b) {
@@ -69,6 +73,74 @@ function displayClick(Text){
     document.querySelector(elementID).innerHTML = "";
 }
 
-function solve(){
+function getTwoNumbers(){
+  let display = document.querySelector('.display').innerHTML;
+  let firstNumber = parseFloat(display, 10)
+  console.log(firstNumber);
 
+  if (display.indexOf('+') > -1)
+  {
+      secondPart = display.substring(display.indexOf("+")+ 1);
+      secondNumber = parseFloat(secondPart, 10);
+      result = parseFloat(firstNumber + secondNumber).toPrecision(10)
+    }
+  
+  if (display.indexOf('-') > -1)
+  {
+      secondPart = display.substring(display.indexOf("-")+ 1);
+      secondNumber = parseFloat(secondPart, 10);
+      result = parseFloat(firstNumber - secondNumber).toPrecision(10)
+    }
+
+  if (display.indexOf('x') > -1)
+  {
+      secondPart = display.substring(display.indexOf("x")+ 1);
+      secondNumber = parseFloat(secondPart, 10);
+      result = parseFloat(firstNumber * secondNumber).toPrecision(10)
+    }
+    
+  if (display.indexOf('/') > -1)
+  {
+      secondPart = display.substring(display.indexOf("/")+ 1);
+      secondNumber = parseFloat(secondPart, 10);
+      result = parseFloat(firstNumber / secondNumber).toPrecision(10)
+    }
+
+  if (display.indexOf('^') > -1)
+  {
+      secondPart = display.substring(display.indexOf("^")+ 1);
+      secondNumber = parseFloat(secondPart, 10);
+      result = Math.pow(firstNumber,secondNumber)
+    }
+  
+  console.log(secondNumber)
+  console.log(result)
+  document.querySelector('.display').innerHTML = result
+
+
+
+ /* function solve(){
+    if (display.indexOf('+') > -1){
+        result = firstNumber + secondNumber
+    }
+  
+    if (display.indexOf('-') > -1){
+        result = subtract(a,b)
+    }
+  
+    if (display.indexOf('x') > -1){
+        result = multiplyTwoNumbers(a,b)
+    }
+  
+    if (display.indexOf('/') > -1){
+        result = divide(a,b)
+    }
+  
+    if (display.indexOf('^') > -1){
+        result = power(a,b)
+    }
+  
+    console.log(result)
+  }
+  */
 }
