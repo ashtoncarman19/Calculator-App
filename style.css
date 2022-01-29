@@ -16,7 +16,7 @@ background-attachment: fixed;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: grey;
+    background-color: darkblue;
     width: 400px;
     height: 550px;
     border-radius: 10%;
@@ -126,4 +126,9 @@ background-attachment: fixed;
     width: 25px;
     text-align: center;
     
+}
+
+.signature{
+    text-align: center;
+    font-size: x-large;
 }
