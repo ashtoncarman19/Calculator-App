@@ -1,10 +1,11 @@
+  
+  const display = document.querySelector('.output');
   /*
   This function allows whatever button you click 
   to add that operator or number to the div with the class 'display'
   whithout creating a new div
   */
   function displayClick(Text){
-    const display = document.querySelector('.output');
     let node = document.createTextNode (Text)
     display.appendChild(node);
 }
@@ -12,8 +13,8 @@
   /*
   This function clears the contents of the div class 'output'
   */
-  function clearContent(elementID) {
-    document.querySelector(elementID).innerHTML = "";
+  function clearContent() {
+    display.innerHTML = "";
 }
 
   /*
@@ -21,7 +22,8 @@
   the contents of the div class 'output'
   */
   function backspace(){
-    document.querySelector('.output').innerHTML.slice(0, -1)
+    const back = display.innerHTML.substring(0 , display.innerHTML.length -1)
+    display.innerHTML = back
     }
   /*
   This function splits the contents of the div 'output' wherever the operator is placed,

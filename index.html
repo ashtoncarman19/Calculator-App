@@ -10,7 +10,7 @@
 <body>
     <div class="calculator-grid">
         <div class="output"></div>
-        <button class="span-two" onclick="clearContent('.output')">AC</button>
+        <button class="span-two" onclick="clearContent()">AC</button>
         <button onclick="backspace()">DEL</button>
         <button onclick="displayClick('÷')">÷</button>
         <button onclick="displayClick(1)">1</button>
@@ -30,6 +30,10 @@
         <button class="span-two" onclick="getTwoNumbers()">=</button>
     </div>
 </div>
+    <div class="git">
+        <img src="Github.png" alt="Github Logo" onclick="window.open('https://github.com/ashtoncarman19','mywindow');" style="cursor: pointer;">&nbsp;
+        <div>Github</div>
+    </div>
     <script src="calculator.js"></script>
 </body>
 </html>

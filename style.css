@@ -9,7 +9,10 @@ body {
   padding: 0;
   background: linear-gradient(to right, rgb(168, 238, 168), rgb(221, 221, 88));
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  gap: 50px;
   }
 
   .calculator-grid {
@@ -38,7 +41,7 @@ body {
       .span-two {
         grid-column: span 2;
         color: #adf802;
-        background-color: rgba(139, 0, 139, 0.8);
+        background-color: rgba(44, 44, 44, 0.8);
       }
 
       .output{
@@ -51,3 +54,8 @@ body {
         font-size: 30px;
 
       }
+
+img{
+  height: 50px;
+  width: 50px;
+}
