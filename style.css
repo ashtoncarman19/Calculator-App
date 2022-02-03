@@ -59,3 +59,8 @@ img{
   height: 50px;
   width: 50px;
 }
+.git{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
